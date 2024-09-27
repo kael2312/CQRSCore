@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>SM_Post</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="PostQueries\**" />
+    <EmbeddedResource Remove="PostQueries\**" />
+    <None Remove="PostQueries\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PostCommand\" />
+  </ItemGroup>
+
+</Project>
